@@ -5,7 +5,13 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       url: '/',
       templateUrl: 'app/areas/home/home.html',
       controller: 'HomeController',
-      controllerAs: 'home'
+      controllerAs: 'homeCtrl'
+    })
+    .state('javascript', {
+      url: '/',
+      templateUrl: 'app/areas/javascript/javascript.html',
+      controller: 'JavascriptController',
+      controllerAs: 'javascriptCtrl'
     });
 
   $urlRouterProvider.otherwise('/');
